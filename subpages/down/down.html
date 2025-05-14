@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>中药大师 - 农田种植</title>
+  <link rel="stylesheet" href="down.css" />
+</head>
+<body>
+  <!-- 返回按钮 -->
+  <div class="up-button" onclick="window.location.href='../../main/main.html'">
+    <img src="../../images/up.png" alt="返回" />
+  </div>
+
+  <!-- 游戏主容器 -->
+  <div class="game-container">
+    <!-- 工具栏 -->
+    <div class="tools">
+      <div class="tool" data-action="water">
+        <img src="../../images/water.png" alt="浇水" />
+        <span>浇水</span>
+      </div>
+      <div class="tool" data-action="dig">
+        <img src="../../images/hoe.png" alt="松土" />
+        <span>松土</span>
+      </div>
+      <div class="tool" data-action="seed">
+        <img src="../../images/seed.png" alt="播种" />
+        <span>播种</span>
+      </div>
+    </div>
+
+    <!-- 农田区域 -->
+    <div class="fields">
+      <div class="field" data-id="1"></div>
+      <div class="field" data-id="2"></div>
+      <div class="field" data-id="3"></div>
+    </div>
+
+    <!-- 金币显示 -->
+    <div class="coins">
+      <img src="../../images/money.png" alt="金币" />
+      <span id="coin-count">180</span>
+    </div>
+    <button class="debug-button" onclick="resetGame()">调试：重置游戏</button>
+  </div>
+
+  <!-- 游戏逻辑 -->
+  <script src="down.js"></script>
+</body>
+</html>
