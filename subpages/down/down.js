@@ -32,7 +32,7 @@ function updateTimer(fieldEl, fieldId) {
   if (!state || !state.watered || !state.plantTime || state.readyToHarvest) return;
 
   const elapsed = Date.now() - state.plantTime;
-  const remaining = 1000 - elapsed;
+  const remaining = 2000 - elapsed;
 
   if (remaining > 0) {
     fieldEl.textContent = `${state.plant} (${Math.ceil(remaining / 1000)}s)`;

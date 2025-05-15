@@ -25,13 +25,23 @@
     </div>
 
     <div class="ding-container">
-      <img src="../images/ding.png" alt="炼药鼎" class="ding-img">
+      <img src="../images/ding.png" alt="炼药鼎" class="ding-img" id="ding-img">
+      <div id="alchemizing-text" class="alchemizing-text">炼药中...</div>
     </div>
 
     <div class="inventory-section">
-      <h2>背包</h2>
-      <div id="inventory-list" class="herb-list"></div>
-    </div>
+     <h2 class="inventory-title">
+  <img src="../images/bag.png" alt="背包" class="bag-icon">
+  背包
+</h2>
+
+  <div class="inventory-tabs">
+    <button class="tab-btn active" id="herb-tab">草药</button>
+    <button class="tab-btn" id="pill-tab">丹药</button>
+  </div>
+  <div id="inventory-list" class="herb-list"></div>
+</div>
+
   </div>
 
   <!-- 底部操作栏 -->
