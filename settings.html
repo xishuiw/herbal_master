@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>设置</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="title">设置</div>
+  <div class="container">
+    <div class="menu">
+      <button class="menu-btn" onclick="resetGame()">重置游戏数据</button>
+      <button class="menu-btn" onclick="location.href='index.html'">返回主界面</button>
+    </div>
+  </div>
+
+  <script>
+    function resetGame() {
+      if (confirm('确认要重置所有田地和金币吗？')) {
+        localStorage.removeItem('fieldStates');
+        localStorage.removeItem('coinCount');
+        localStorage.removeItem('inventory');
+        location.reload(); // 刷新页面
+      }
+    }
+  </script>
+</body>
+</html>

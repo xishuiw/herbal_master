@@ -13,9 +13,9 @@ const herbIcons = {
 };
 
 const pillIcons = {
-  '补气丹': 'pill1.png',
-  '养血丸': 'pill2.png',
-  '废药': 'pill0.png'
+  '补气丹': 'pills1.png',
+  '养血丸': 'pills2.png',
+  '废药': 'pills5.png'
 };
 
 // 本地存储数据

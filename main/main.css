@@ -214,3 +214,19 @@ body {
   height: 40px;
   vertical-align: middle;
 }
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.home-btn img {
+  width: 36px;
+  height: 36px;
+}
